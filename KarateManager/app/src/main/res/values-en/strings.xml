@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">KarateManager</string>
+    <string name="Add_compet">Add a competition</string>
+    <string name="Add_fight">Add a fight</string>
+    <string name="Compet">competitions list</string>
+    <string name="Fight">Fight</string>
+    <string name="Historical">historical</string>
     <string name="action_settings">Options</string>
 </resources>

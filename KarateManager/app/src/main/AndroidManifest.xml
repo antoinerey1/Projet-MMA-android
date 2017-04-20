@@ -11,22 +11,22 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.AppBarOverlay">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".AddCompetitionActivity"
-            android:label="@string/app_name" />
+            android:label="@string/Add_compet" />
         <activity android:name=".AddFightActivity"
-            android:label="@string/app_name" />
+            android:label="@string/Add_fight" />
         <activity android:name=".CompetitionListActivity"
-            android:label="@string/app_name" />
+            android:label="@string/Compet" />
         <activity android:name=".FightActivity"
-            android:label="@string/app_name" />
+            android:label="@string/Fight" />
         <activity android:name=".HistoricalActivity"
-            android:label="@string/app_name" />
+            android:label="@string/Historical" />
     </application>
 
 </manifest>
