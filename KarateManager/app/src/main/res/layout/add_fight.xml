@@ -14,8 +14,7 @@
         <MultiAutoCompleteTextView
             android:id="@+id/autocompleteCompet"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Competition" />
+            android:layout_height="wrap_content" />
 
         <EditText
             android:id="@+id/editOpponent"
@@ -24,8 +23,8 @@
             android:layout_column="0"
             android:layout_row="3"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Adversaire" />
+            android:hint="Adversaire"
+            android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/editScorePerso"
@@ -33,8 +32,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="fill_horizontal"
             android:ems="10"
-            android:inputType="numberSigned"
-            android:text="Score personnel" />
+            android:hint="Score personnel"
+            android:inputType="numberSigned" />
 
         <EditText
             android:id="@+id/editScoreOpponent"
@@ -42,8 +41,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="fill_horizontal"
             android:ems="10"
-            android:inputType="numberSigned"
-            android:text="Score adversaire" />
+            android:hint="Score adversaire"
+            android:inputType="numberSigned" />
 
     </GridLayout>
 
@@ -54,21 +53,21 @@
         android:rowCount="1">
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/eraseButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
             android:layout_margin="5dp"
             android:background="#ffb66e"
-            android:text="Button" />
+            android:text="Effacer" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/addButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
             android:layout_margin="5dp"
             android:background="#ffb66e"
-            android:text="Button" />
+            android:text="Ajouter" />
     </GridLayout>
 </LinearLayout>
