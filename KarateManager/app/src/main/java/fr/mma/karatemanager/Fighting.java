@@ -6,7 +6,7 @@ package fr.mma.karatemanager;
 
 public class Fighting {
     private int id;
-    private int id_competition;
+    private Competition competition;
     private int points;
     private int opponent_points;
     private String opponent;
@@ -19,12 +19,12 @@ public class Fighting {
         this.id = id;
     }
 
-    public int getId_competition() {
-        return id_competition;
+    public Competition getCompetition() {
+        return competition;
     }
 
-    public void setId_competition(int id_competition) {
-        this.id_competition = id_competition;
+    public void setId_competition(Competition competition) {
+        this.competition = competition;
     }
 
     public int getPoints() {
