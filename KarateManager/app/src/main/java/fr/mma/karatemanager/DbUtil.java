@@ -15,10 +15,10 @@ public class DbUtil {
         this.dbAccess = new DbAccess(context);
     }
 
-    private void insertInTableFighting(String opponent, int points,int  opponent_points, int id_competition) {
-        dbAccess.GetDb().execSQL("INSERT INTO fighting (opponent, points, opponent_points, id_competition) VALUES (?,?,?,?)", new Object[]{opponent, points, opponent_points, id_competition});
+    private void insertInTableFighting(Fighting fighting) {
+        dbAccess.GetDb().execSQL("INSERT INTO fighting (opponent, points, opponent_points, id_competition) VALUES (?,?,?,?)", new Object[]{fighting.getOpponent(), fighting.getPoints(), fighting.getOpponent_points(), fighting.getId_competition()});
     }
     private void insertInTableCompetition(Competition competition) {
-        dbAccess.GetDb().execSQL("INSERT INTO competition (name, fdate, location, result)) VALUES (?,?,?,?) WHERE id=?",new Object[]{competition.getName(), competition.getDate(), competition.getDate(), competition.getScore(), competition.getId()});
+        dbAccess.GetDb().execSQL("INSERT INTO competition (name, fdate, location, result)) VALUES (?,?,?,?)",new Object[]{competition.getName(), competition.getDate(), competition.getLocation(), competition.getScore()});
     }
 }
