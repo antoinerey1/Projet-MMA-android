@@ -11,7 +11,7 @@ public class Competition {
     private int id;
     private String name;
     private String location;
-    private String scrore;
+    private String score;
     private Date date;
 
     public int getId() {
@@ -38,12 +38,12 @@ public class Competition {
         this.location = location;
     }
 
-    public String getScrore() {
-        return scrore;
+    public String getScore() {
+        return score;
     }
 
-    public void setScrore(String scrore) {
-        this.scrore = scrore;
+    public void setScore(String scrore) {
+        this.score = score;
     }
 
     public Date getDate() {
