@@ -31,7 +31,7 @@
             android:layout_row="1"
             android:ems="10"
             android:hint="La date"
-            android:inputType="time" />
+            android:inputType="date" />
 
         <EditText
             android:id="@+id/editLieux"
