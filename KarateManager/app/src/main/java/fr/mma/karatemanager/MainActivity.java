@@ -24,6 +24,20 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
+    public void OnClickCompetButton(View view)
+    {}
+
+    public void OnClickCombatButton(View view)
+    {}
+
+    public void OnClickHistoButton(View view)
+    {}
+
+    public void OnClickListCompetButton(View view)
+    {}
+
+
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
