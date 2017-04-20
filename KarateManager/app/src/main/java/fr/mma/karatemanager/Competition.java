@@ -53,4 +53,6 @@ public class Competition {
     public void setDate(Date date) {
         this.date = date;
     }
+
+
 }
