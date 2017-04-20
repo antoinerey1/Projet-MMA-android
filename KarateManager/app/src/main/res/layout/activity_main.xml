@@ -29,6 +29,7 @@
             android:layout_weight="1"
             android:width="0dp"
             android:background="#ffb66e"
+            android:onClick="OnClickHistoButton"
             android:text="Historique"
             android:textSize="12sp" />
 
@@ -44,6 +45,7 @@
             android:layout_weight="1"
             android:width="0dp"
             android:background="#ffb66e"
+            android:onClick="OnClickListCompetButton"
             android:text="Listes des compétitions"
             android:textSize="12sp" />
     </LinearLayout>
@@ -65,6 +67,7 @@
             android:layout_weight="1"
             android:width="0dp"
             android:background="#ffb66e"
+            android:onClick="OnClickCompetButton"
             android:text="Ajouter une competition"
             android:textSize="12sp" />
 
@@ -80,6 +83,7 @@
             android:layout_weight="1"
             android:width="0dp"
             android:background="#ffb66e"
+            android:onClick="OnClickCombatButton"
             android:text="Ajouter un combat"
             android:textSize="12sp" />
 
