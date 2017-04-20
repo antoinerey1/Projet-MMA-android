@@ -21,4 +21,17 @@ public class DbUtil {
     private void insertInTableCompetition(Competition competition) {
         dbAccess.GetDb().execSQL("INSERT INTO competition (name, fdate, location, result)) VALUES (?,?,?,?)",new Object[]{competition.getName(), competition.getDate(), competition.getLocation(), competition.getScore()});
     }
+    private void deleteAllFight(){
+        dbAccess.GetDb().execSQL("DELETE * FROM fighting");
+    }
+    private void deleteFight(Fighting fighting){
+        dbAccess.GetDb().execSQL("DELETE * FROM fighting WHERE id = ?",new Object[]{fighting.getId()});
+    }
+    private void deleteAllCompetition(){
+        dbAccess.GetDb().execSQL("DELETE * FROM competition");
+    }
+    private void deleteCompetition(Fighting fighting,Competition competition){
+        dbAccess.GetDb().execSQL("DELETE * FROM fighting WHERE id_competition = ?", new Object[]{fighting.getCompetition().getId()});
+        dbAccess.GetDb().execSQL("DELETE * FROM competition WHERE id = ?", new Object[]{competition.getId()});
+    }
 }
