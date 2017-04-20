@@ -1,5 +1,7 @@
 package fr.mma.karatemanager;
 
+import java.util.Date;
+
 /**
  * Created by mamar on 20/04/2017.
  */
@@ -10,6 +12,7 @@ public class Competition {
     private String name;
     private String location;
     private String scrore;
+    private Date date;
 
     public int getId() {
         return id;
@@ -41,5 +44,13 @@ public class Competition {
 
     public void setScrore(String scrore) {
         this.scrore = scrore;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
     }
 }
