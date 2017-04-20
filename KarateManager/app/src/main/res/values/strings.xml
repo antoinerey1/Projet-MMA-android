@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">KarateManager</string>
     <string name="action_settings">Options</string>
+    <string name="main_pres">Bienvenue sur cette application destinée à gérer vos résultats en compétition de Karaté.</string>
 </resources>
