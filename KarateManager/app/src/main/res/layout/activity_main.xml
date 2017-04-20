@@ -8,8 +8,8 @@
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        android:layout_weight="0.63" />
+        android:layout_weight="0.73"
+        android:text="TextView" />
 
     <GridLayout
         android:layout_width="match_parent"
@@ -18,12 +18,13 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/competButton"
             android:layout_width="wrap_content"
             android:layout_height="70dp"
             android:layout_columnWeight="1"
             android:layout_gravity="fill_horizontal"
-            android:text="Button" />
+            android:background="#ffb66e"
+            android:text="Ajouter une competition" />
 
         <Button
             android:id="@+id/combatButton"
@@ -32,28 +33,28 @@
             android:layout_columnWeight="1"
             android:layout_gravity="fill_horizontal"
             android:background="#ffb66e"
-            android:text="Button" />
+            android:text="Ajouter un combat" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/histoButton"
             android:layout_width="wrap_content"
             android:layout_height="70dp"
             android:layout_gravity="fill_horizontal"
-            android:text="Button" />
+            android:background="#ffb66e"
+            android:text="Historique" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/listeButton"
             android:layout_width="wrap_content"
             android:layout_height="70dp"
             android:layout_gravity="fill_horizontal"
-            android:text="Button" />
+            android:background="#ffb66e"
+            android:text="Listes des compétitions" />
 
     </GridLayout>
 
     <GridView
         android:layout_width="match_parent"
-        android:layout_height="146dp"
-        android:layout_gravity="fill"
-        android:layout_weight="1" />
+        android:layout_height="156dp" />
 
 </LinearLayout>
