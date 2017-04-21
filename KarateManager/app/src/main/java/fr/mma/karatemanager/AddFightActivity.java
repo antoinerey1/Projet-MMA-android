@@ -13,13 +13,13 @@ import android.widget.Toast;
  * Created by Mitch on 20/04/2017.
  */
 
-public class AddFightActivity extends Activity {
+public class AddFightActivity extends Activity implements View.OnClickListener{
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_fight);
     }
-    @RequiresApi(api = Build.VERSION_CODES.GINGERBREAD)
+
     public void onClick(View view) {
 
         EditText compet = (EditText) findViewById(R.id.autocompleteCompet);
@@ -28,7 +28,7 @@ public class AddFightActivity extends Activity {
         EditText scoreopp = (EditText) findViewById(R.id.editScoreOpponent);
 
         switch (view.getId()) {
-            case (R.id.addButton):
+            case (R.id.addButtonFight):
                 if (!compet.getText().toString().isEmpty() && !opponent.getText().toString().isEmpty() && !scoreperso.getText().toString().isEmpty() && !scoreopp.getText().toString().isEmpty() ) {
                     Fighting fighting = new Fighting();
                     fighting.setId_competition(Integer.parseInt(compet.getText().toString()));
@@ -41,8 +41,10 @@ public class AddFightActivity extends Activity {
                     DbUtil dbUtils = new DbUtil(this);
                     dbUtils.insertInTableFighting(fighting);
                     Toast.makeText(this,"Sauvegarde ok!", Toast.LENGTH_LONG).show();
+                    break;
                 }else {
                     Toast.makeText(this,"Formulaire incomplet!", Toast.LENGTH_LONG).show();
+                    break;
                 }
         }
 

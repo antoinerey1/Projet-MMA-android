@@ -16,21 +16,20 @@ import android.widget.Toast;
  * Created by Mitch on 20/04/2017.
  */
 
-public class AddCompetitionActivity extends Activity {
+public class AddCompetitionActivity extends Activity implements View.OnClickListener{
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_competition);
 
     }
-    @RequiresApi(api = Build.VERSION_CODES.GINGERBREAD)
+
     public void onClick(View view) {
 
         EditText nom = (EditText) findViewById(R.id.editCompet);
         EditText date = (EditText) findViewById(R.id.editDate);
         EditText place = (EditText) findViewById(R.id.editLieux);
         EditText result = (EditText) findViewById(R.id.editScore);
-
         switch (view.getId()) {
             case (R.id.addButton):
                 if (!nom.getText().toString().isEmpty() && !date.getText().toString().isEmpty() && !place.getText().toString().isEmpty() && !result.getText().toString().isEmpty() ) {
@@ -44,8 +43,10 @@ Competition competition = new Competition();
                    DbUtil dbUtils = new DbUtil(this);
                     dbUtils.insertInTableCompetition(competition);
                     Toast.makeText(this,"Sauvegarde ok!", Toast.LENGTH_LONG).show();
+                    break;
                 }else {
                     Toast.makeText(this,"Formulaire incomplet!", Toast.LENGTH_LONG).show();
+                    break;
                 }
         }
 
