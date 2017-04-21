@@ -27,7 +27,7 @@
             android:text="Effacer" />
 
         <Button
-            android:id="@+id/setFight"
+            android:id="@+id/setFightButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
