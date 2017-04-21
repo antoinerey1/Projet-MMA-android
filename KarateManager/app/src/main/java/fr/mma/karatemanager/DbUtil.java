@@ -19,7 +19,7 @@ public class DbUtil {
     }
 
     private void insertInTableFighting(Fighting fighting) {
-        dbAccess.GetDb().execSQL("INSERT INTO fighting (opponent, points, opponent_points, id_competition) VALUES (?,?,?,?)", new Object[]{fighting.getOpponent(), fighting.getPoints(), fighting.getOpponent_points(), fighting.getCompetition().getId()});
+        dbAccess.GetDb().execSQL("INSERT INTO fighting (opponent, points, opponent_points, id_competition) VALUES (?,?,?,?)", new Object[]{fighting.getOpponent(), fighting.getPoints(), fighting.getOpponent_points(), fighting.getCompetition()});
     }
     private void insertInTableCompetition(Competition competition) {
         dbAccess.GetDb().execSQL("INSERT INTO competition (name, fdate, location, result)) VALUES (?,?,?,?)",new Object[]{competition.getName(), competition.getDate(), competition.getLocation(), competition.getScore()});
@@ -34,7 +34,7 @@ public class DbUtil {
         dbAccess.GetDb().execSQL("DELETE * FROM competition");
     }
     private void deleteCompetition(Fighting fighting,Competition competition){
-        dbAccess.GetDb().execSQL("DELETE * FROM fighting WHERE id_competition = ?", new Object[]{fighting.getCompetition().getId()});
+        dbAccess.GetDb().execSQL("DELETE * FROM fighting WHERE id_competition = ?", new Object[]{fighting.getCompetition()});
         dbAccess.GetDb().execSQL("DELETE * FROM competition WHERE id = ?", new Object[]{competition.getId()});
     }
 private void selectFight(Fighting fighting){
