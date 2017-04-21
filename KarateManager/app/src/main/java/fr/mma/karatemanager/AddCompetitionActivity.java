@@ -16,7 +16,7 @@ import android.widget.Toast;
  * Created by Mitch on 20/04/2017.
  */
 
-public class AddCompetitionActivity extends Activity implements View.OnClickListener{
+public class AddCompetitionActivity extends Activity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,8 +24,8 @@ public class AddCompetitionActivity extends Activity implements View.OnClickList
 
     }
 
-    public void onClick(View view) {
-
+    public void onClickAddButon(View view) {
+        Toast.makeText(this,"Formulaire incomplet!", Toast.LENGTH_LONG).show();
         EditText nom = (EditText) findViewById(R.id.editCompet);
         EditText date = (EditText) findViewById(R.id.editDate);
         EditText place = (EditText) findViewById(R.id.editLieux);
@@ -44,11 +44,9 @@ Competition competition = new Competition();
                     dbUtils.insertInTableCompetition(competition);
                     Toast.makeText(this,"Sauvegarde ok!", Toast.LENGTH_LONG).show();
                     break;
-                }else {
-                    Toast.makeText(this,"Formulaire incomplet!", Toast.LENGTH_LONG).show();
-                    break;
+                }
                 }
         }
 
     }
-}
+

@@ -71,6 +71,7 @@
             android:layout_gravity="fill_horizontal"
             android:layout_margin="5dp"
             android:background="#ffb66e"
-            android:text="@string/Add" />
+            android:text="@string/Add"
+            android:onClick="onClickAddButon"/>
     </GridLayout>
 </LinearLayout>
