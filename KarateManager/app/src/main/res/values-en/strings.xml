@@ -1,4 +1,9 @@
 <resources>
+
+    <string name="Add">Add</string>
+    <string name="Suppr">Erase</string>
+    <string name="Set">Set</string>
+
     <string name="app_name">KarateManager</string>
             <string name="main_pres">Welcome on this application where you can manage your results of your karate competitions.</string>
 
@@ -13,9 +18,9 @@
             <string name="your_score">Your score</string>
             <string name="opp_score">Opponent score</string>
 
-
     <string name="Compet">Competitions list</string>
     <string name="Fight">Fights</string>
     <string name="Historical">Historic</string>
     <string name="action_settings">Options</string>
+
 </resources>

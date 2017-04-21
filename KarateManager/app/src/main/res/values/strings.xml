@@ -1,11 +1,15 @@
 <resources>
 
+    <string name="Add">Ajouter</string>
+    <string name="Suppr">Supprimer</string>
+    <string name="Set">Modifier</string>
+
     <string name="app_name">Karate Manager</string>
             <string name="main_pres">Bienvenue sur cette application destinée à gérer vos résultats en compétition de Karaté.</string>
 
 
     <string name="Add_compet">Ajouter une compétition</string>
-            <string name="compet">Competition</string>
+            <string name="compet">Competitions</string>
             <string name="date">Date</string>
             <string name="place">Lieu</string>
             <string name="ranking">Classement</string>
@@ -17,7 +21,7 @@
             <string name="opp_score">Score adversaire</string>
 
 
-    <string name="Compet">liste de compétitions</string>
+    <string name="Compet">Liste de compétitions</string>
     <string name="Fight">Combats</string>
     <string name="Historical">historique</string>
     <string name="action_settings">Options</string>

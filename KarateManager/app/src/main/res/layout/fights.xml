@@ -24,7 +24,7 @@
             android:layout_columnWeight="1"
             android:layout_margin="5dp"
             android:background="#ffb66e"
-            android:text="Effacer" />
+            android:text="@string/Suppr" />
 
         <Button
             android:id="@+id/setFightButton"
@@ -33,6 +33,6 @@
             android:layout_columnWeight="1"
             android:layout_margin="5dp"
             android:background="#ffb66e"
-            android:text="Modifier" />
+            android:text="@string/Set" />
     </GridLayout>
 </LinearLayout>
