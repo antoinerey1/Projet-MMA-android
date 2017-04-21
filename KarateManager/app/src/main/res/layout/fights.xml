@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:weightSum="1">
 
+    <GridView
+        android:id="@+id/fightGrid"
+        android:layout_width="match_parent"
+        android:layout_height="311dp"
+        android:visibility="visible"
+        android:layout_weight="1.00" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:columnCount="2"
+        android:rowCount="1">
+
+        <Button
+            android:id="@+id/eraseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:background="#ffb66e"
+            android:text="Effacer" />
+
+        <Button
+            android:id="@+id/setFight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:background="#ffb66e"
+            android:text="Modifier" />
+    </GridLayout>
 </LinearLayout>

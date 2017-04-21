@@ -8,10 +8,10 @@ import android.support.annotation.Nullable;
  * Created by Mitch on 20/04/2017.
  */
 
-public class HistoricalActivity extends Activity {
+public class HistoricActivity extends Activity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.historical);
+        setContentView(R.layout.historic);
     }
 }

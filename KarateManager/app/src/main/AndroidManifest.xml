@@ -25,7 +25,7 @@
             android:label="@string/Compet" />
         <activity android:name=".FightActivity"
             android:label="@string/Fight" />
-        <activity android:name=".HistoricalActivity"
+        <activity android:name=".HistoricActivity"
             android:label="@string/Historical" />
     </application>
 
