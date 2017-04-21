@@ -12,36 +12,43 @@ import java.util.ArrayList;
 
 public class DbUtil {
 
+    private static DbUtil dbUtils;
     private DbAccess dbAccess;
+
     public DbUtil(Context context)
     {
         this.dbAccess = new DbAccess(context);
     }
 
-    private void insertInTableFighting(Fighting fighting) {
+    public static DbUtil getInstance() {
+        return dbUtils;
+    }
+
+
+    public void insertInTableFighting(Fighting fighting) {
         dbAccess.GetDb().execSQL("INSERT INTO fighting (opponent, points, opponent_points, id_competition) VALUES (?,?,?,?)", new Object[]{fighting.getOpponent(), fighting.getPoints(), fighting.getOpponent_points(), fighting.getCompetition()});
     }
-    private void insertInTableCompetition(Competition competition) {
+    public void insertInTableCompetition(Competition competition) {
         dbAccess.GetDb().execSQL("INSERT INTO competition (name, fdate, location, result)) VALUES (?,?,?,?)",new Object[]{competition.getName(), competition.getDate(), competition.getLocation(), competition.getScore()});
     }
-    private void deleteAllFight(){
+    public void deleteAllFight(){
         dbAccess.GetDb().execSQL("DELETE * FROM fighting");
     }
-    private void deleteFight(Fighting fighting){
+    public void deleteFight(Fighting fighting){
         dbAccess.GetDb().execSQL("DELETE * FROM fighting WHERE id = ?",new Object[]{fighting.getId()});
     }
-    private void deleteAllCompetition(){
+    public void deleteAllCompetition(){
         dbAccess.GetDb().execSQL("DELETE * FROM competition");
     }
-    private void deleteCompetition(Fighting fighting,Competition competition){
+    public void deleteCompetition(Fighting fighting,Competition competition){
         dbAccess.GetDb().execSQL("DELETE * FROM fighting WHERE id_competition = ?", new Object[]{fighting.getCompetition()});
         dbAccess.GetDb().execSQL("DELETE * FROM competition WHERE id = ?", new Object[]{competition.getId()});
     }
-private void selectFight(Fighting fighting){
+public void selectFight(Fighting fighting){
     dbAccess.GetDb().execSQL("SELECT * FROM fighting WHERE id =?",new Object[]{fighting.getId()});
 
 }
-private ArrayList selectAllFights(){
+public ArrayList selectAllFights(){
     Cursor c = dbAccess.GetDb().rawQuery("SELECT * c FROM fighting",null);
     int i =0;
    ArrayList <Fighting> fight = new ArrayList();
@@ -61,10 +68,10 @@ private ArrayList selectAllFights(){
     }
 return fight;
 }
-private void selectCompetition(Competition competition){
+public void selectCompetition(Competition competition){
     dbAccess.GetDb().execSQL("SELECT * FROM competition WHERE id =?", new Object[]{competition.getId()});
 }
-    private ArrayList selectAllCompetition(){
+    public ArrayList selectAllCompetition(){
         Cursor c = dbAccess.GetDb().rawQuery("SELECT * c FROM competition",null);
         int i =0;
         ArrayList <Competition> compet= new ArrayList();

@@ -41,8 +41,11 @@ Competition competition = new Competition();
                     competition.setDate(date.getText().toString());
 
 
-                    DbUtil dbAccess = new DbUtil(this);
-
+                   DbUtil dbUtils = new DbUtil(this);
+                    dbUtils.insertInTableCompetition(competition);
+                    Toast.makeText(this,"Sauvegarde ok!", Toast.LENGTH_LONG).show();
+                }else {
+                    Toast.makeText(this,"Formulaire incomplet!", Toast.LENGTH_LONG).show();
                 }
         }
 
