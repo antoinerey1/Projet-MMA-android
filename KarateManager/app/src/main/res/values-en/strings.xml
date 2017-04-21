@@ -1,10 +1,21 @@
 <resources>
     <string name="app_name">KarateManager</string>
+            <string name="main_pres">Welcome on this application where you can manage your results of your karate competitions.</string>
+
     <string name="Add_compet">Add a competition</string>
+            <string name="compet">Competition</string>
+            <string name="date">Date</string>
+            <string name="place">Place</string>
+            <string name="ranking">Ranking</string>
+
     <string name="Add_fight">Add a fight</string>
+            <string name="opponent">Opponent</string>
+            <string name="your_score">Your score</string>
+            <string name="opp_score">Opponent score</string>
+
+
     <string name="Compet">Competitions list</string>
     <string name="Fight">Fights</string>
     <string name="Historical">Historic</string>
     <string name="action_settings">Options</string>
-    <string name="main_pres">Welcome on this application where you can manage your results of your karate competitions.</string>
 </resources>
