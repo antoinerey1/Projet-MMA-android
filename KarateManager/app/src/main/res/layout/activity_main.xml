@@ -27,7 +27,7 @@
             android:width="0dp"
             android:background="#ffb66e"
             android:onClick="OnClickHistoButton"
-            android:text="Historique"
+            android:text="@string/Historical"
             android:textSize="12sp" />
 
         <Button
@@ -40,7 +40,7 @@
             android:width="0dp"
             android:background="#ffb66e"
             android:onClick="OnClickListCompetButton"
-            android:text="Listes des compétitions"
+            android:text="@string/compet"
             android:textSize="12sp" />
     </LinearLayout>
 
@@ -59,7 +59,7 @@
             android:width="0dp"
             android:background="#ffb66e"
             android:onClick="OnClickCompetButton"
-            android:text="Ajouter une competition"
+            android:text="@string/Add_compet"
             android:textSize="12sp" />
 
         <Button
@@ -72,7 +72,7 @@
             android:width="0dp"
             android:background="#ffb66e"
             android:onClick="OnClickCombatButton"
-            android:text="Ajouter un combat"
+            android:text="@string/Add_fight"
             android:textSize="12sp" />
 
     </LinearLayout>
