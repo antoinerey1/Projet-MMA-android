@@ -48,7 +48,7 @@ public void selectFight(Fighting fighting){
     dbAccess.GetDb().execSQL("SELECT * FROM fighting WHERE id =?",new Object[]{fighting.getId()});
 
 }
-public ArrayList selectAllFights(){
+public ArrayList<Fighting> selectAllFights(){
     Cursor c = dbAccess.GetDb().rawQuery("SELECT * c FROM fighting",null);
     int i =0;
    ArrayList <Fighting> fight = new ArrayList();
@@ -71,7 +71,7 @@ return fight;
 public void selectCompetition(Competition competition){
     dbAccess.GetDb().execSQL("SELECT * FROM competition WHERE id =?", new Object[]{competition.getId()});
 }
-    public ArrayList selectAllCompetition(){
+    public ArrayList<Competition> selectAllCompetition(){
         Cursor c = dbAccess.GetDb().rawQuery("SELECT * c FROM competition",null);
         int i =0;
         ArrayList <Competition> compet= new ArrayList();
